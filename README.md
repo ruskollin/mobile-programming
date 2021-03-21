@@ -1,4 +1,4 @@
-# Small Projects from the Mobile Programming Course
+# Basic Assignments from the Mobile Programming Course
 
 ## Basic Components :eyes:  
 *Calculator  
