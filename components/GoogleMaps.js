@@ -3,22 +3,22 @@ import{ View , Button, StyleSheet, TextInput} from 'react-native';
 import MapView, {Marker} from 'react-native-maps';
 import {APIkey} from './MyKeys.js';
 
-export default function MapFinder() {
-  const [address, SetAddress] = React.useState('');
-  const [region, SetRegion] = React.useState({latitude: 60.170275, longitude: 24.943749, latitudeDelta: 0.1, longitudeDelta: 0.1});
-  const [markers, SetMarkers] = React.useState([]);
-  const [lat, SetLat] = React.useState('');
-  const [lng, SetLng] = React.useState('');
+export default function GoogleMaps() {
+  const [address, setAddress] = React.useState('');
+  const [region, setRegion] = React.useState({latitude: 60.170275, longitude: 24.943749, latitudeDelta: 0.1, longitudeDelta: 0.1});
+  const [markers, setMarkers] = React.useState([]);
+  const [lat, setLat] = React.useState('');
+  const [lng, setLng] = React.useState('');
   const key= APIkey;
 
-  GetAddress = () => {
+  getAddress = () => {
     const url = 'https://maps.googleapis.com/maps/api/geocode/json?address=' + address + '&key=' + key;
     fetch(url)
     .then((response) => response.json())
     .then((jsondata) => { 
-      SetLat(jsondata.results[0].geometry.location.lat);
-      SetLng(jsondata.results[0].geometry.location.lng);
-      SetRegion({latitude: lat, longitude: lon, latitudeDelta: 0.0222, longitudeDelta: 0.0121})
+      setLat(jsondata.results[0].geometry.location.lat);
+      setLng(jsondata.results[0].geometry.location.lng);
+      setRegion({latitude: lat, longitude: lon, latitudeDelta: 0.0222, longitudeDelta: 0.0121})
     });
   }
   
@@ -38,10 +38,10 @@ return (
     <TextInput 
       style={{height: 40, fontSize: 18, marginBottom: 10}}
       placeholder='Type Address' 
-      onChangeText={address => SetAddress(address)}>
+      onChangeText={address => setAddress(address)}>
     </TextInput>
 
-    <Button title="Show" onPress={GetAddress} />
+    <Button title="Show" onPress={getAddress} />
   </View>
 )
 };

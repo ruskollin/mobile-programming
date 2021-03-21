@@ -3,7 +3,7 @@ import { StyleSheet, View, Button, TextInput } from 'react-native';
 import MapView, {Marker} from 'react-native-maps';
 import {APIkey} from './MyKeys.js';
 
-export default function Maps() {
+export default function MapQuest() {
   const [address, setAddress] = useState('');
   const [region, setRegion] = useState({
     latitude: 60.200692,
