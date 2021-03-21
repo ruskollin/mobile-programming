@@ -15,7 +15,7 @@
 ## Maps :house_with_garden:  
 *Find an Address using Google Maps  
 *Find an Address using MapQuest  
-*Get User Location 
+*Get User Location  
 *Restaurant Finder
     
 ## Database & Firebase :mailbox:  
