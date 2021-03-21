@@ -13,9 +13,10 @@
 *Job Search  
     
 ## Maps :house_with_garden:  
-*Find an Address   
-*Restaurant Finder  
-*Location  
+*Find an Address using Google Maps  
+*Find an Address using MapQuest  
+*Get User Location
+*Restaurant Finder
     
 ## Database & Firebase :mailbox:  
 *Shopping List with Database  
