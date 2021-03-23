@@ -5,7 +5,7 @@ import { Ionicons } from '@expo/vector-icons';
 import MyPlacesHome from "./components/MyPlaces/MyPlacesHome.js"
 import MyPlacesMap from "./components/MyPlaces/MyPlacesMap.js"
 
-export default function App() {
+export default function MyPlaces() {
   
   const screenOptions = ({ route }) => ({
     tabBarIcon: ({ color, size }) => {
