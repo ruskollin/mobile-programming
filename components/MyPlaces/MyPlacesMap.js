@@ -2,6 +2,7 @@ import * as Location from 'expo-location';
 import React, {useState, useEffect} from 'react';
 import { StyleSheet, View, Button, TextInput } from 'react-native';
 import MapView, {Marker} from 'react-native-maps';
+import {APIkey} from './components/Keys.js';
 
 export default function MyPlacesMap({route, navigation}) {
   const { address } = route.params;
@@ -11,7 +12,7 @@ export default function MyPlacesMap({route, navigation}) {
     latitudeDelta: 0.0322,
     longitudeDelta: 0.0221
   });
-  const key = 'BATEzdB2gu8SvXEgNu5cnBNQJ5fDGWkG';
+  const key = APIkey;
   
   useEffect (() => {
     getLocation();
