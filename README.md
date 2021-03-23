@@ -16,7 +16,8 @@
 *Find an Address using Google Maps  
 *Find an Address using MapQuest  
 *Get User Location  
-*Restaurant Finder
+*Restaurant Finder  
+*Making a List of Places and Showing in Map 
     
 ## Database & Firebase :mailbox:  
 *Shopping List with Database  
